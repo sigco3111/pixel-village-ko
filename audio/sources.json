@@ -1,0 +1,14 @@
+{
+ "note": "Sonniss GDC Game Audio Bundle recordings, cut and levelled for this game. Games only; never to be passed on as sounds or put in a public source repo.",
+ "sources": {
+  "sea": "2018/Discover Oregon - Ocean and Stream/Ocean Waves 2017 Kauai Night Waves.WAV",
+  "fall": "2018/Discover Oregon - Ocean and Stream/Streams 2014 McKenzie 1.wav",
+  "wind": "2018/Discover Oregon - Wind and Storms/Wind Gusts 2016 Lookout Snow - Biggest Gusts Long.wav",
+  "ground0": "2016/Levan Nadashvili - Civilian Footsteps/FS Ground Civilian Walk N03.wav",
+  "ground1": "2016/Levan Nadashvili - Civilian Footsteps/FS Ground Civilian Walk N05.wav",
+  "wood0": "2016/Levan Nadashvili - Civilian Footsteps/FS Wood Civilian Crouch N03.wav",
+  "wood1": "2016/Levan Nadashvili - Civilian Footsteps/FS Wood Civilian Crouch N05.wav",
+  "stone0": "2016/Levan Nadashvili - Soldier Footsteps/FS Concrete Soldier Crouch N02.wav",
+  "stone1": "2016/Levan Nadashvili - Soldier Footsteps/FS Concrete Soldier Crouch N05.wav"
+ }
+}

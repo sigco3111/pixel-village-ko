@@ -1,0 +1,11 @@
+node_modules/
+dist/
+out/
+*.log
+.env
+__pycache__/
+# recordings that may not be passed on as files (MISSING_ASSETS.md)
+audio/*.ogg
+# the recordings themselves, as downloaded (tools/sounds.py)
+sonniss/
+.test/

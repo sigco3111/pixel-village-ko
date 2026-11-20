@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel village</title>
+<link rel="icon" href="data:,">
+<style>html, body { margin: 0; height: 100%; background: #0a0810; overflow: hidden; } canvas { display: block; }
+#hint { position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%); font: 13px/1 system-ui, sans-serif; letter-spacing: 0.04em; color: rgba(255, 240, 220, 0.86); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); transition: opacity 1.6s; pointer-events: none; text-align: center; white-space: nowrap; }
+#hint small { display: block; margin-top: 9px; font-size: 11px; letter-spacing: 0.02em; opacity: 0.72; }</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hint">WASD to walk &nbsp;·&nbsp; Shift to run &nbsp;·&nbsp; M mute &nbsp;·&nbsp; N music<small>Music: &ldquo;Evening Fall (Harp)&rdquo; by Kevin MacLeod, CC BY 4.0</small></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
