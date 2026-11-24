@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pixel village</title>
+<title>픽셀 빌리지 | 한국어판</title>
 <link rel="icon" href="data:,">
 <style>html, body { margin: 0; height: 100%; background: #0a0810; overflow: hidden; } canvas { display: block; }
-#hint { position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%); font: 13px/1 system-ui, sans-serif; letter-spacing: 0.04em; color: rgba(255, 240, 220, 0.86); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); transition: opacity 1.6s; pointer-events: none; text-align: center; white-space: nowrap; }
+#hint { position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%); font: 13px/1 system-ui, sans-serif; letter-spacing: 0.04em; color: rgba(255, 240, 220, 0.86); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); transition: opacity 1.6s; pointer-events: none; text-align: center; white-space: normal; width: min(92vw, 780px); line-height: 1.6; }
 #hint small { display: block; margin-top: 9px; font-size: 11px; letter-spacing: 0.02em; opacity: 0.72; }</style>
 </head>
 <body>
-<canvas id="c"></canvas>
-<div id="hint">WASD to walk &nbsp;·&nbsp; Shift to run &nbsp;·&nbsp; M mute &nbsp;·&nbsp; N music<small>Music: &ldquo;Evening Fall (Harp)&rdquo; by Kevin MacLeod, CC BY 4.0</small></div>
+<canvas id="c" aria-label="해 질 녘 절벽 마을. WASD 또는 방향키로 이동하고 Shift로 달립니다."></canvas>
+<div id="hint">WASD / 방향키 이동 &nbsp;·&nbsp; Shift 달리기 &nbsp;·&nbsp; M 전체 소리 &nbsp;·&nbsp; N 음악<small>음악: &ldquo;Evening Fall (Harp)&rdquo; 작곡 Kevin MacLeod, CC BY 4.0</small></div>
 <script type="module" src="main.js"></script>
 </body>
 </html>

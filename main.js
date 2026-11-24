@@ -4,7 +4,8 @@
 import * as THREE from './lib/three.module.js';
 import { makeTextures, FOLK, HERO } from './textures.js';
 import { buildWorld, makeNav, START, BUILD } from './world.js';
-import { patchBlock } from './lib/patch-block.js';
+// 독립 실행판. 원본의 Patch 호스트 통신은 사용하지 않습니다.
+const patchBlock = () => ({ ready() {} });
 
 const Q = new URLSearchParams(location.search);
 const canvas = document.getElementById('c');
@@ -107,7 +108,7 @@ function loadSound() {
   const master = AC.createGain(); master.gain.value = 0.9; master.connect(AC.destination); sound.master = master;
   const load = async (n) => { try { const r = await fetch('audio/' + n + '.ogg'); return r.ok ? await AC.decodeAudioData(await r.arrayBuffer()) : null; } catch { return null; } };
   sound.music = new Audio(); sound.music.preload = 'auto'; sound.music.src = 'audio/music.mp3'; sound.music.loop = true; sound.music.volume = 0.3;
-  const names = ['sea', 'wind', 'ground0', 'ground1', 'stone0', 'stone1', 'wood0', 'wood1']; if (world.falls.length) names.push('fall');
+  const names = []; // 한국어 공개판: 원본 저장소에 없는 재배포 제한 효과음은 요청하지 않습니다.
   Promise.all(names.map(load)).then((b) => { sound.bufs = Object.fromEntries(names.map((n, k) => [n, b[k]])); sound.loaded = true; if (sound.wanted) playSound(); });
 }
 function playSound() {
